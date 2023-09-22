@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>İlk Form</legend>
+        <form onsubmit="alert('Form submit edildi.')" action="javascript:alert('Form submit edildi.')">
+            <label for="nameId1">İsim</label>
+            <input id="nameId1" type="text" name="name1" placeholder="isiminizi yazınız" value="Afife Betül" />
+            <br />
+            <label>Tarih
+                <input type="date" name="date1" />
+            </label>
+            <br />
+            <label><input type="checkbox" name="checkbox1" /> checkbox1</label>
+            <label><input type="checkbox" name="checkbox2" /> checkbox2</label>
+            <label><input type="checkbox" name="checkbox3" /> checkbox3</label>
+            <br />
+            <label><input type="radio" name="radio1" value="radio1" /> radio1</label>
+            <label><input type="radio" name="radio1" value="radio2" /> radio2</label>
+            <label><input type="radio" name="radio1" value="radio3" /> radio3</label>
+            <br />
+            <label>Yaş
+                <input type="number" name="number1" min="0" max="10000" />
+            </label>
+            <br />
+            <label>CV
+                <input type="file" name="file1" />
+            </label>
+            <br />
+            <input type="hidden" name="hidden1" value="hidden value" />
+            <br />
+            <label>Şifre
+                <input type="password" name="password1" />
+            </label>
+            <br />
+            <label>Öğrenciler
+                <select name="select1">
+                    <option value="value1">Mehmet</option>
+                    <option value="value2">Ahmet</option>
+                    <option value="value3">Aminenur</option>
+                </select>
+            </label>
+            <br />
+            <label>Öğrenciler
+                <select name="select2" multiple size="3">
+                    <option value="value1">Mehmet</option>
+                    <option value="value2">Ahmet</option>
+                    <option value="value3">Aminenur</option>
+                </select>
+            </label>
+            <br />
+            <label>Cover Letter
+                <textarea name="textarea1" rows="5" cols="50"></textarea>
+            </label>
+            <br />
+            <input type="submit" value="Submit" />
+            <!-- <input type="button" /> -->
+            <button type="submit">Submit</button>
+        </form>
+    </fieldset>
+</body>
+
+</html>
