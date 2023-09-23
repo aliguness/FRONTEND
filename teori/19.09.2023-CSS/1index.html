@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+
+    <style>
+        span {
+            color: darkred;
+        }
+
+        .internal3 {
+            color: darkorchid;
+        }
+
+        .external1+div#internal3 {
+            color: dodgerblue;
+        }
+
+        .internal3 .internal5 {}
+
+        .internal3>div.internal6.internal7 {
+            color: lightgreen;
+        }
+
+        .internal4+.internal6 {}
+
+        .internal4+.internal6 {}
+    </style>
+
+    <link rel="stylesheet" href="1style.css" />
+</head>
+
+<body>
+    <div style="color: chocolate">inline css</div>
+    <span>internal css 1 </span>
+    <span>internal css 2</span>
+    <div class="external1">external css</div>
+    <div id="internal3" class="internal3 external2" style="color: mediumseagreen">
+        internal css 3
+        <div class="internal4">
+            internal 4
+            <div class="internal5">internal 5</div>
+        </div>
+        <div class="internal6 internal7">internal 6</div>
+    </div>
+</body>
+
+</html>

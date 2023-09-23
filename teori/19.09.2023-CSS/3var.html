@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            --primary-color: red;
+            --secondary-color: rgb(255, 85, 85);
+            --header-font-size: 36px;
+            --paragraph-font-size: 24px;
+            --font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+                sans-serif;
+        }
+
+        h3 {
+            font-size: var(--header-font-size);
+            color: var(--primary-color);
+            font-family: var(--font-family);
+        }
+
+        body {
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        .container {
+            --size: 96px;
+
+            width: var(--size);
+            height: var(--size);
+            border-radius: calc(var(--size) / 2);
+
+            background-color: var(--secondary-color);
+            font-size: var(--paragraph-font-size);
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <header>
+            <h3>Yapay Zeka</h3>
+        </header>
+        <p>
+            <span>Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+        </p>
+    </article>
+    <div class="container">
+        box
+        <div class="child">child</div>
+    </div>
+</body>
+
+</html>

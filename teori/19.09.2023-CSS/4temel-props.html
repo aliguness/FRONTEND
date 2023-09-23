@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temel CSS Property'leri</title>
+    <style>
+        .hsl {
+            background-color: hsl(160, 100%, 75%);
+            width: 500px;
+            height: 500px;
+            transition: 0.5s all ease-in-out;
+        }
+
+        .hsl:hover {
+            background-color: hsl(160, 50%, 50%);
+        }
+
+        .hexcode {
+            background-color: #ff69b4;
+            width: 500px;
+            height: 500px;
+            transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        .hexcode:hover {
+            background-color: #df348a;
+            width: 600px;
+            height: 600px;
+        }
+
+        img {
+            width: 500px;
+            height: 500px;
+            object-fit: contain;
+        }
+
+        .image {
+            width: 500px;
+            height: 500px;
+            background: url(https://www.w3schools.com/html/pic_trulli.jpg) no-repeat center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="evler" />
+    <div class="image"></div>
+    <div style="color: rgb(227, 15, 15)">Lorem ipsum</div>
+    <div style="color: rgba(227, 15, 15, 0.5)">Lorem ipsum</div>
+    <div class="hexcode" style="color: #8a2be2">hexcode</div>
+    <div class="hsl">hsl</div>
+</body>
+
+</html>

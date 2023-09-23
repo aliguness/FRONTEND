@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Shantell Sans";
+  src: url(./ShantellSans-Bold.ttf), local("ShantellSans Bold");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Shantell Sans";
+  src: url(./ShantellSans-BoldItalic.ttf), local("ShantellSans BoldItalic");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Shantell Sans";
+  src: url(./ShantellSans-ExtraBold.ttf), local("ShantellSans ExtraBold");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Shantell Sans";
+  src: url(./ShantellSans-ExtraBoldItalic.ttf), local("ShantellSans ExtraBoldItalic");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Shantell Sans";
+  src: url(./ShantellSans-Light.ttf), local("ShantellSans Light");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Shantell Sans";
+  src: url(./ShantellSans-LightItalic.ttf), local("ShantellSans LightItalic");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Shantell Sans";
+  src: url(./ShantellSans-Medium.ttf), local("ShantellSans Medium");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Shantell Sans";
+  src: url(./ShantellSans-MediumItalic.ttf), local("ShantellSans MediumItalic");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Shantell Sans";
+  src: url(./ShantellSans-SemiBold.ttf), local("ShantellSans SemiBold");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Shantell Sans";
+  src: url(./ShantellSans-SemiBoldItalic.ttf), local("ShantellSans SemiBoldItalic");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Shantell Sans";
+  src: url(./ShantellSans-Regular.ttf), local("ShantellSans Regular");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Shantell Sans";
+  src: url(./ShantellSans-Italic.ttf), local("ShantellSans Italic");
+  font-weight: 400;
+  font-style: italic;
+}

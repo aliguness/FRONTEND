@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .block1 {
+            display: block;
+            background-color: bisque;
+            height: 100px;
+            border: 2px solid coral;
+            border-radius: 5px;
+
+            margin: 20px;
+            padding: 50px;
+        }
+
+        .block2 {
+            display: block;
+            background-color: aquamarine;
+            height: 100px;
+            border: 2px solid indigo;
+
+            /*
+          Yukarıdan 30px,
+          sağdan ve soldan 20px,
+          aşağıdan 10px
+        */
+            margin: 30px 20px 10px;
+            /*
+          Yukarıdan ve aşağıdan 40px
+          sağdan ve soldan 30px
+        */
+            padding: 40px 30px;
+        }
+
+        .inline1 {
+            display: inline;
+            background-color: burlywood;
+
+            margin: 10px;
+            padding: 20px;
+            float: right;
+        }
+
+        .inline-block1 {
+            display: inline-block;
+            background-color: crimson;
+            color: white;
+
+            margin: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="block1">Display Block</div>
+    <div class="block1">
+        Display Block
+        <div class="inline1">Nested Inline</div>
+    </div>
+    <div class="block1">
+        Display Block
+        <div class="inline-block1">Nested Inline Block</div>
+    </div>
+    <div class="block2">Display Block</div>
+</body>
+
+</html>

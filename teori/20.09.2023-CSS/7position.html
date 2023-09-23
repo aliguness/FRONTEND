@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+
+    <style>
+        .relative1 {
+            position: relative;
+            height: 600px;
+            width: 600px;
+            background-color: bisque;
+        }
+
+        .absolute1 {
+            position: absolute;
+            /*top:;
+        right:;
+        left:;
+        bottom:;*/
+            top: 10px;
+            right: 20px;
+
+            height: 150px;
+            width: 150px;
+            background-color: burlywood;
+        }
+
+        .absolute2 {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+
+            height: 100px;
+            width: 100px;
+            background-color: coral;
+        }
+
+        .fixed1 {
+            position: fixed;
+            /*top:;
+        right:;
+        left:;
+        bottom:;*/
+            bottom: 20px;
+            right: 20px;
+            /*
+          z-index çalışması için relative, absolute, fixed, sticky'den biri olmalıdır.
+        */
+            z-index: 1;
+
+            height: 70px;
+            width: 70px;
+            background-color: cornflowerblue;
+        }
+
+        .fixed2 {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+
+            height: 70px;
+            width: 70px;
+            background-color: deeppink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="relative1">
+        Relative 1
+        <!-- Absolute olan elementin container'ının position property'si 
+      relative, absolute, fixed, sticky ise container olarak onu görür -->
+        <div class="absolute1">
+            Absolute 1
+            <div class="absolute2">
+                Absolute 2
+                <div class="fixed1">Fixed 1</div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed2">Fixed 2</div>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+.external1 {
+    color: darksalmon;
+  }
+  
+  .external2 {
+    color: deeppink;
+  }
+  
+  .external3,
+  .internal1 {
+    /* ortak stil verme */
+  }
+  
