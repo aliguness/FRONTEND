@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+</head>
+
+<body>
+    <form action="">
+        <!-- Text inputu : içine metinsel veri girilmesini sağlar. 
+           placeholder attribute ile input içine girilecek değer ile ipucu bilgisi girilebilir.  -->
+        <label for="fname">First Name :</label>
+        <br />
+        <input type="text" id="fname" />
+        <br />
+
+        <label for="lname">Last Name :</label>
+        <br />
+        <input type="text" id="lname" placeholder="Last Name :" />
+        <br />
+
+        <!-- email attribute ile oluşturulan inputta @ işareti kontrol ettirtilir. 
+      pattern ile uzantısı ne ise onun eklenmesi şeklinde bir validasyon yaptırtır  -->
+        <label for="email">Enter email:</label>
+        <br />
+        <input type="email" id="email" name="email" pattern=".+@example\.com" placeholder="...@example.com" />
+        <input type="submit" />
+        <br />
+
+        <!-- telefon numarası için input -->
+        <!--  Pattern ile rakamların nasıl girileceği belirlenir.  -->
+        <label for="phone">Phone Number:</label>
+        <br />
+        <input type="tel" id="phone" name="phone" placeholder="543-123-45-67" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}" />
+        <br />
+
+        <!-- Password inputu : girilen şifrenin gözükmemsini sağlar -->
+        <label for="pssword">Password :</label>
+        <br />
+        <input type="password" id="pssword" />
+        <br />
+        <br />
+
+        <!-- Kullanılan option etiketi ile Cinsiyet seçeneklerini açılır menü olarak oluşturduk. -->
+        <label for="gndr">Gender:</label>
+        <br />
+        <select name="gender" id="gndr">
+            <option value="">Female</option>
+            <option value="">Male</option>
+            <option value="">Other</option>
+        </select>
+        <br />
+        <br />
+
+        <!-- Radio button -->
+        Marital Status
+        <br />
+        Single
+        <input type="radio" name="martial-status" value="single" />
+        Married
+        <input type="radio" name="martial-status" value="married" />
+        <br />
+
+        <!--Date attribute ile açılır bir tarih sekmesi çıkar -->
+        <label for="birthday">Birthday:</label>
+        <br />
+        <input type="date" id="birthday" name="birthday" min="31-12-1990" />
+        <br />
+        <br />
+
+        <!--Month attribute ile açılır bir aylık tarih sekmesi çıkar -->
+        <label for="bdaymonth">Birthday (Month and Year):</label>
+        <br />
+        <input type="month" name="bdaymonth" id="bdaymonth" />
+        <br />
+        <br />
+
+        <!--Week attribute ile açılır bir haftalık tarih sekmesi çıkar -->
+        <label for="week">Week:</label>
+        <br />
+        <input type="week" id="week" name="week" lang="tr" />
+        <br /><br />
+
+        <!-- Time attribute ile saat ve dakika girilebilir.-->
+        <label for="appt">Time:</label>
+        <br />
+        <input type="time" id="appt" />
+        <br />
+        <br />
+
+        <!-- textarea etiketi ile bir ileti kutusu açılır. 
+      rows ile satır / cols ile sutun ölçüsü belirlenebilir.  -->
+        <label for="about">About : </label>
+        <br />
+
+        <textarea name="about" id="about" rows="4" cols="30"></textarea>
+        <br />
+        <br />
+
+        <!--Seçeneklerin kaç adet görünmesi gerektiğini 'size' ile belirleyebildiğimiz seçim yaptırılabilir. -->
+
+        <label for="course-name">Which course?</label>
+        <br />
+
+        <select name="course-name" id="course-name" size="5" multiple>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+            <option>React</option>
+            <option>C#</option>
+            <option>C++</option>
+            <option>Java</option>
+        </select>
+        <br />
+        <br />
+
+        <!--type="number": minimum ve maksimum bir aralıkta verilen sayı input kutusuna girilebilir -->
+        <label for="quantity">Quantity(1 - 5):</label>
+        <br />
+        <input type="number" id="quantity" name="quantity" min="1" max="5" />
+        <br />
+        <br />
+
+        <!-- type="range" : belirtilen minimum ve maksimum aralıkta bir range nesnesinin nasıl gideceğini belirler. -->
+        <label for="vol">Interval(0 - 50):</label>
+        <br />
+        <input type="range" id="vol" name="vol" min="0" max="50" step="1" />
+        <br />
+        <br />
+
+        <label for="course-type">Course Type :</label>
+        <br />
+
+        <!--type="checkbox" : birkaç seçenek seçilebilmesi için oluşturulabilir.  -->
+        <input type="checkbox" /> Online <input type="checkbox" /> Hybrid
+        <input type="checkbox" /> Video
+        <br />
+        <br />
+
+        <!-- type="color" : renk seçenekleri sunar -->
+        <label for="favcolor">Favorite Color:</label>
+        <br />
+        <input type="color" />
+        <br />
+        <br />
+
+        <!-- URL girilmesini sağlar -->
+        <label for="homepage">URL:</label>
+        <br />
+        <input type="url" id="homepage" />
+        <input type="submit" />
+        <br />
+        <br />
+
+        <!-- Dosya seç butonu  -->
+        <label for="myfile">Select File:</label>
+        <br />
+        <input type="file" id="myfile" name="myfile" />
+        <br />
+        <br />
+        <!-- boş olan inputa gönderiyor. -->
+        <input type="submit" value="Save" />
+        <br />
+        <br />
+
+        <!-- Save Butonuna basıldığında Alert mesajı veriyor -->
+        <button onclick="alert('Save pressed')">Save</button>
+    </form>
+</body>
+
+</html>
