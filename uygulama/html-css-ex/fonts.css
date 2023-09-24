@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Monsterrat-Black";
+    src: url(assets/fonts/Montserrat/static/Montserrat-Black.ttf);
+}
+@font-face {
+    font-family: "Monsterrat-Thin";
+    src: url(assets/fonts/Montserrat/static/Montserrat-Thin.ttf);
+}
+@font-face {
+    font-family: "Monsterrat-Light";
+    src: url(assets/fonts/Montserrat/static/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url(assets/fonts/Open-Sans/static/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: "Inter-Black" ;
+    src: url(assets/fonts/Inter/static/Inter-Black.ttf);
+}
+@font-face {
+    font-family: "Inter-Light";
+    src: url(assets/fonts/Inter/static/Inter-Light.ttf);
+}
