@@ -1,0 +1,24 @@
+:root {
+    --color-primary: #23856d;
+    --color-text: #252b42;
+    --color-second-text: #737373;
+    --color-gradient-text: linear-gradient(90deg, #8a5ae2 0%, #c24be7 100%);
+    --color-light-text: #ffffff;
+    --color-tonal-bg: #e9fffa;
+    --color-light-bg: #ffffff;
+    --color-btn-boxshadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    --color-btn-boxshadow-hover: 0px 2px 4px 0px rgba(0, 0, 0, 0);
+  
+    --fontfamily-montserrat: "Montserrat", sans-serif;
+    --fontfamily-inter: "Inter", sans-serif;
+    --fontfamily-opensans: "OpenSans", sans-serif;
+  
+    --fontsize-xs: 12px;
+    --fontsize-sm: 14px;
+    --fontsize-xl: 48px;
+  
+    --size-navbar: 96px;
+    --size-maxwidth: 1200px;
+  
+    --transition: 0.3s all ease;
+  }

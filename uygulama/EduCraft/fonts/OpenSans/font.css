@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url(./OpenSans-ExtraBold.ttf), local("OpenSans ExtraBold");
+  font-weight: 800;
+}
