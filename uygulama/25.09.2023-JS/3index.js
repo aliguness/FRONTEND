@@ -156,3 +156,4 @@ switch (marka) {
         stokDurumu = "Yok";
         break;
 }
+console.log(stokDurumu);

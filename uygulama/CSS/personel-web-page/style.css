@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: pink;
+}
+
+/*Header */
+header{
+    background-color: #333;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 12px ;
+    font-size: 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    color: #ffffffd6;
+}
+
+/*Home*/
+#home{
+    background-color: #f2f2f2;
+    text-align: center;
+}
+h1{
+    font-size: 28px;
+    padding: 20px;
+}
+img{
+    width: 20%;
+    border-radius: 50%;
+    margin: 20px;
+}
+.icons{
+    padding-bottom: 20px;
+}
+
+.icons > * {
+    margin: 12px;
+    color: #333;
+}
+
+#about {
+    background-color: #fff;
+    padding: 20px;
+}
+#about article{
+    margin: 16px;
+}
+
+#skills {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#skills ul {
+    list-style: none;
+    column-count: 2;
+}
+
+#skills ul li{
+    margin: 16px;
+}
+
+#projects {
+    background-color: #fff;
+    padding: 20px;
+}
+#projects article{
+    margin: 16px;
+}
+
+#contact {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+#contact div {
+    margin: 12px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+}
+input, textarea {
+    width: 100%;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+
+input[type="submit"]{
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: .6s ease;
+}
+
+input[type="submit"]:hover{
+    background-color: #333333cf;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+}

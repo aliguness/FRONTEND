@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blueviolet;
+  color: #fff;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logo h1{
+    cursor: pointer;
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+.logo span {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+nav ul li:hover{
+    text-decoration: underline;
+    color: #ffffffc3;
+    cursor: pointer;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 50px;
+    margin: 70px 0;
+}
+.food-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.food-card{
+    background-color: rgba(220, 202, 236, 0.664);
+    flex-basis: 200px;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.food-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    color: blueviolet;
+}
+.food-card img{
+    width: 100%;
+    border-radius: 8px;
+}
+.food-card p{
+    text-align: justify;
+    font-weight: 300;
+}
+
+

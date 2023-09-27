@@ -1,0 +1,19 @@
+<img src="https://nationaltoday.com/wp-content/uploads/2019/07/national-junk-food-day-300x300.jpg" alt="Burger Menu" />
+
+<img src="https://simply-delicious-food.com/wp-content/uploads/2020/08/Bourbon-basted-cheeseburger-2-300x300.jpg" alt="Burger" />
+
+<img src="https://www.maricruzavalos.com/wp-content/uploads/2022/03/huaraches-food-recipe-300x300.jpg" alt="Taco" />
+
+<img src="https://plantationcateringnewport.com/wp-content/uploads/2018/05/ca4.jpg" alt="Sandwich" />
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8flrE3zynR5J3EJU1lyDEDqCtiQkFJCP03w&usqp=CAU" alt="Burger" />
+
+<img src="https://sudachirecipes.com/wp-content/uploads/2022/08/chaliapin-steak-donburi-thumbnail-300x300.jpg" alt="Steak Bowl" />
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtwA34FJwTEMQ-hCu7X9x6QtiyMdRVkPv92Q&usqp=CAU" alt="Pasta" />
+         
+<img src="https://assets.dierbergs.com/proddierbergsstorage/media/June-2023-Product-Images-300x300-Loaded-Burger-1.jpg" alt="Meetball" />
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO5tyHKnWo0NKpmRXZ9LOvRnZAVxFw4NMCDQ&usqp=CAU" alt="Noodle" />
+
+<img src="https://plantyou.com/wp-content/uploads/2023/01/DSC03694-300x300.jpg" alt="Chickpea" />
