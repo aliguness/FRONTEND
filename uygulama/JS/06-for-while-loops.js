@@ -33,7 +33,6 @@
 // console.log("Sınıf ortalaması: " + sinifOrtalamasi);
 // console.log("Geçen öğrenci sayısı: " + gecenOgrenciSayisi);
 
-
 // -------------------While, Sayı Tahmin uygulaması-----------------------
 
 // Random bir sayı tanımlayın ve kullanıcıdan 1-10 arası bir sayı girerek sayıyı tahmin etmesini isteyin. Toplam 3 hak tanımlayın. While döngüsü kullanarak, kullanıcının hakları bitene kadar denemesine izin verin. Her denemenin sonunda sayıyı arttırıp azaltması gerektiği bilgisini ekrana yazdırın.
@@ -59,8 +58,6 @@
 //  } else {
 //     alert(`Hakkınız bitti! Kaybettiniz.`)
 //  }
-
-
 
 // -------------------While, Alışveriş Sepeti Uygulaması-----------------------
 

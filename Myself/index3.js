@@ -48,25 +48,38 @@
 //     break;
 // }
 
-const sayi1 = parseInt(prompt("Lütfen birinci sayıyı giriniz"));
-const sayi2 = parseInt(prompt("Lütfen ikinci sayıyı giriniz"));
-const islemTipi = prompt("İşlem tipini seçin");
+// const sayi1 = parseInt(prompt("Lütfen birinci sayıyı giriniz"));
+// const sayi2 = parseInt(prompt("Lütfen ikinci sayıyı giriniz"));
+// const islemTipi = prompt("İşlem tipini seçin");
 
-switch (islemTipi) {
-  case "+":
-    console.log(`Toplama Sonucu: ${sayi1 + sayi2}`);
-    break;
-  case "-":
-    console.log(sayi1 - sayi2);
-    break;
-  case "*":
-    console.log(sayi1 * sayi2);
-    break;
-  case "/":
-    console.log((sayi1 / sayi2).toFixed(3));
-    break;
+// switch (islemTipi) {
+//   case "+":
+//     console.log(`Toplama Sonucu: ${sayi1 + sayi2}`);
+//     break;
+//   case "-":
+//     console.log(sayi1 - sayi2);
+//     break;
+//   case "*":
+//     console.log(sayi1 * sayi2);
+//     break;
+//   case "/":
+//     console.log((sayi1 / sayi2).toFixed(3));
+//     break;
 
-  default:
-    console.log("Hatalı işlem girdiniz!");
-    break;
-}
+//   default:
+//     console.log("Hatalı işlem girdiniz!");
+//     break;
+//}
+
+const myArray = ["Ali", "Engin", 32, true, "elma", "armut", "fasulye"];
+console.log(myArray);
+myArray[0] = "Mert";
+console.log(myArray.length);
+const yeniArray = myArray.push("köpek");
+console.log(yeniArray);
+
+console.log(myArray.unshift("kedi"));
+console.log(myArray);
+
+myArray.pop();
+console.log(myArray);
