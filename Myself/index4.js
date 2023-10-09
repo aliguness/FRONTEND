@@ -110,3 +110,38 @@ console.log(tersi(kelime));
 // };
 // console.log(`${kelime} -->${tersineCevirme(kelime)}`);
 // console.log(tersineCevirme(kelime));
+
+// 9- Verilen bir dizinin elemanlarını rastgele karıştıran bir fonksiyon yazın.
+console.log("Soru-9");
+
+const diziyiKaristir = (karistir) => {
+  let j = 0;
+};
+
+// 10- pozitif bölenleri bölensayıları bulan function.
+
+console.log("Soru-10");
+
+const pozitifBolenler = (sayi) => {
+  const bolenler = [];
+  for (let i = 1; i < sayi; i++) {
+    if (sayi % i === 0) {
+      bolenler.push(i);
+    }
+  }
+  return bolenler;
+};
+console.log(pozitifBolenler(15));
+
+// 11-
+
+// 12-
+
+const sayilarToplami = (...sayilar) => {
+  let toplam = 0;
+  for (let i = 0; i < sayilar.length; i++) {
+    toplam += sayilar[i];
+  }
+  return toplam;
+};
+console.log(sayilarToplami(1, 2, 3, 4, 5));

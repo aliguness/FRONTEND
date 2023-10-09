@@ -1,0 +1,9 @@
+.character {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4.5rem 0px;
+  background: #282c34;
+  min-height: calc(50vh - 60px);
+}
