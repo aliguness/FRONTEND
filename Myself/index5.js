@@ -127,3 +127,29 @@ const diziToplam = dizi.reduce(
   0
 );
 console.log(diziToplam);
+
+// 14- Verilen bir dizi içerisindeki ilk çift sayıyı döndüren bir örnek
+const ilkCift = dizi.find((eleman) => eleman % 2 == 0);
+console.log(ilkCift);
+
+// 15- Verilen bir dizi içerisindeki son çift sayıyı döndüren bir örnek
+const sonCift = dizi.findLast((eleman) => eleman % 2 == 0);
+console.log(sonCift);
+
+// ---------------some-------------------
+// 16- Verilen bir dizi içerisinde en az bir negatif sayı olup olmadığını kontrol eden bir örnek
+
+const negatifSayi = dizi2.some((eleman) => eleman < 0);
+console.log(negatifSayi);
+
+// ---------------every-------------------
+// 17- Verilen bir dizi içerisindeki tüm sayıların pozitif olduğunu kontrol eden bir örnek
+const pozitifSayi = dizi2.every((eleman) => eleman >= 0);
+console.log(pozitifSayi);
+
+// ---------------sort-------------------
+// 18- Verilen bir dizi içerisindeki sayıları sıralayan bir örnek
+const sayiSiralama = dizi2.sort((a, b) => a - b);
+console.log(sayiSiralama);
+const sayiSiralama2 = dizi2.sort((a, b) => b - a);
+console.log(sayiSiralama2);
