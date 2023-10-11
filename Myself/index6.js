@@ -191,3 +191,60 @@ const ucretDetay = (object) => {
 ucretDetay(aracBilgileri);
 
 // İçerisinde 3 adet öğrenci nesnesi bulunan bir dizi oluşturun. her nesnenin kendisine ait isim ve not özellikleri bulunsun.(örn. {name: "Cem", grades: [80, 90, 50]}) Öğrencilerin ortalama notlarını `for...of` döngüsü kullanarak hesaplayın ve dersten geçip geçmedikleri bilgisini isimleriyle birlikte konsola yazdırın. (Geçer not 60)
+
+const ortalamaHesapla = () => {
+  arr.forEach((arr) => {
+    for (let i of arr.grades) {
+    }
+  });
+};
+
+const ucretDetay1 = (object) => {
+  object.servisKayitlari.forEach((e) => {
+    let servisTarihi = e.tarih;
+    e.detay.forEach((a) => {
+      console.log(servisTarihi + " " + a.aciklama + " " + a.ucret + " TL");
+    });
+    console.log("************");
+  });
+};
+ucretDetay1(aracBilgileri);
+
+const student = {
+  fname: "Ali",
+  sname: "Güneş",
+  age: 32,
+  gender: "Male",
+};
+for (let i in student) {
+  console.log(i + ": " + student[i]);
+}
+
+// İçerisinde 3 adet öğrenci nesnesi bulunan bir dizi oluşturun. her nesnenin kendisine ait isim ve not özellikleri bulunsun.(örn. {name: "Cem", grades: [80, 90, 50]}) Öğrencilerin ortalama notlarını `for...of` döngüsü kullanarak hesaplayın ve dersten geçip geçmedikleri bilgisini isimleriyle birlikte konsola yazdırın. (Geçer not 60)
+
+const students = [
+  { name: "Ali", grades: [40, 30, 50] },
+  { name: "Ahmet", grades: [80, 90, 50] },
+  { name: "Serkan", grades: [60, 70, 50] },
+];
+
+const basariDurumu = (arr) => {
+  for (let i of arr) {
+    let toplam = 0;
+    for (let j of i.grades) {
+      toplam += j;
+    }
+    const ortalamaHesapla = Math.ceil(toplam / i.grades.length);
+    if (ortalamaHesapla >= 60) {
+      console.log(
+        `${i.name}'in ortalaması ${ortalamaHesapla}, bu sebeple başarılı bir öğrencidir`
+      );
+    } else {
+      console.log(
+        `${i.name}'in ortalaması ${ortalamaHesapla}, bu sebeple geçer not alamamıştır`
+      );
+    }
+  }
+};
+
+basariDurumu(students);
