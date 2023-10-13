@@ -86,3 +86,48 @@ const postRequest = (endPoint, callbackFunction, response) => {
 // const postsURL = "/posts";
 
 postRequest(url + userURL, callBackFunctionAysu, postData);
+
+// PUT REQUEST //belirttigimiz id'li kısımdaki tum veriyi siler ve belirttigin veriyi ekler.
+
+const postData1 = { name: "Aysu", age: "27" };
+
+const putRequest = (endPoint, callbackFunction, data) => {
+  const request = new XMLHttpRequest(); //request nesnesi urettik
+  request.open("PUT", endPoint);
+  request.setRequestHeader("Content-type", "Application/json");
+
+  request.onreadystatechange = () => {
+    if (request.readyState === XMLHttpRequest.DONE && request.status === 200) {
+      const response = JSON.parse(request.responseText);
+      callbackFunction(response, null);
+    } else if (request.readyState === 4) {
+      callbackFunction(null, `${request.status} kodlu hata alınmıştır.`);
+    }
+  };
+  request.send(JSON.stringify(data));
+};
+
+putRequest(url + userURL + "/2", callBackFunctionAysu, postData1);
+
+// PATCH REQUEST  verdiğimiz verileri yama yapar.
+const postData2 = { name: "Engin", age: "33" };
+
+const patchRequest = (enpoint, callbackFunction, data) => {
+  const request = new XMLHttpRequest();
+  request.open("PATCH", enpoint);
+  request.setRequestHeader("Content-Type", "Application/json");
+
+  request.onreadystatechange = () => {
+    if (request.readyState === XMLHttpRequest.DONE && request.status === 200) {
+      const response = JSON.parse(request.responseText);
+      callbackFunction(response, null); //2.kısımda hata olmadığı için null yazdık.
+    } else if (request.readyState === XMLHttpRequest.DONE) {
+      callbackFunction(null, `${request.status} kodlu hata oluştu`);
+    }
+  };
+  request.send(JSON.stringify(data));
+};
+
+patchRequest(`${url}${userURL}/3`, callBackFunctionAysu, postData2); // suslu yazdım ozel bir sey yok.
+
+//patchRequest(urel + userURL + "/2", callBackFunctionAysu, postData2);
