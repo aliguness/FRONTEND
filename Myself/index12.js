@@ -9,6 +9,8 @@ const commentsURL = "/comments";
 const todosURL = "/todos";
 const postsURL = "/posts";
 
+// GET methodlarında setRequestHeader("Content-type", "application/json") böyle başlık ve format belirtmemize gerek yok.
+
 const getRequest = (callBackFunction, endPoint) => {
   const request = new XMLHttpRequest();
   request.open("GET", endPoint);
@@ -131,3 +133,26 @@ const patchRequest = (enpoint, callbackFunction, data) => {
 patchRequest(`${url}${userURL}/3`, callBackFunctionAysu, postData2); // suslu yazdım ozel bir sey yok.
 
 //patchRequest(urel + userURL + "/2", callBackFunctionAysu, postData2);
+
+// get  : Verileri getiriyoruz.
+// post : Gonderme islemi yapar. (Yeni bir eleman ekler)
+// put  : id belirleriz. icini temizler. verdigimiz bilgileri(veri) girer.
+// patch : id belirleriz. icini temizlemez. Eslesen veriler degisir. girdigimiz veriler yoksa ek yapar.
+
+//DELETE REQUEST
+
+const deleteRequest = (endPoint, callbackFunction) => {
+  const request = new XMLHttpRequest();
+  request.open("DELETE", endPoint);
+
+  request.onreadystatechange = () => {
+    if (request.readyState === XMLHttpRequest.DONE && request.status === 200) {
+      callbackFunction(`silme islemi basarili`, null);
+    } else if (request.readyState === XMLHttpRequest.DONE) {
+      callbackFunction(`${request.status} Kod'lu Hata Olustu`);
+    }
+  };
+  request.send();
+};
+// deleteRequest(`${url}${userURL}/4`, callBackFunctionAysu);
+deleteRequest(url + userURL + "/4", callBackFunctionAysu);
