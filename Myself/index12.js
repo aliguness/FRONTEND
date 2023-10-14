@@ -156,3 +156,39 @@ const deleteRequest = (endPoint, callbackFunction) => {
 };
 // deleteRequest(`${url}${userURL}/4`, callBackFunctionAysu);
 deleteRequest(url + userURL + "/4", callBackFunctionAysu);
+
+//getRequest(callBackFunctionAysu, `${url}/posts/${postId}`);
+
+// get  : Verileri getiriyoruz.
+// post : Gonderme islemi yapar. (Yeni bir eleman ekler)
+// put  : id belirleriz. icini temizler. verdigimiz bilgileri(veri) girer.
+// patch : id belirleriz. icini temizlemez. Eslesen veriler degisir. girdigimiz veriler yoksa ek yapar.
+
+// const url = "https://jsonplaceholder.typicode.com";
+// const userURL = "/users";
+// const commentsURL = "/comments";
+// const todosURL = "/todos";
+// const postsURL = "/posts";
+
+// https://jsonplaceholder.typicode.com/users/4      kısacası bu uzantıyı hazırlamış olduk.
+
+const getRequest5 = (callBackFunction, endPoint) => {
+  const request = new XMLHttpRequest();
+  request.open("GET", endPoint);
+  request.addEventListener("readystatechange", () => {
+    if (request.readyState === 4 && request.status === 200) {
+      const data = JSON.parse(request.responseText);
+
+      callBackFunction(data, null);
+    } else if (request.readyState === 4) {
+      callBackFunction(
+        null,
+        `Bu işlem hatalıdır.${request.status} Bunları hepsi Ali beyin suçu`
+      );
+    }
+  });
+  request.send();
+};
+
+const postId = prompt("Lütfen ID giriniz: ");
+getRequest5(callBackFunctionAysu, `${url}/posts/${postId}`);
