@@ -41,7 +41,7 @@ const postsURL = "/posts";
 //     console.log(`hata alindi ${error}`);
 //   });
 
-//arrow içinde response nesnesi üretip içine fetch() verdik. const response eşitledik.
+//arrow  function içinde response nesnesi üretip içine fetch() verdik. const response eşitledik.
 //!response.ok değeri dönmezse. yani cevabını alamadıysak hiç bekleme gel hatayı fırlat.
 //if'e girmezse cons data'ya response.json() JS nesnesine çevir data'ya ata. sonra console'a yazdır.
 const getAllCommentsAsync = async () => {
@@ -62,3 +62,50 @@ getAllCommentsAsync();
 // arrow function'ımızı açtık.
 //fetch() yapımızı kuruyoruz. fetch ile url kısmına istek attık. response değişkenine atadık. hemen altında biz bu isteği okuyamayızo yğzden js nesnesine dönüştürdük. onuda data değişkenşnde tuttuk. Sonra yakaladığımız veriyi yani fetchden dönen cevabı atadığımız data'yı yazdırıyoruz.
 // Genel bir hata kontrolünü de try{}catch{} içerisinde
+
+//GET ile sadece verileri ekrana yazdırıyoruz.
+
+// const getAllCommentsThen = fetch(url + commentsURL)
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then((data) => {
+//     console.log("get all comments", data);
+//   })
+//   .catch((error) => {
+//     console.log("hata alındı.", error);
+//   });
+
+// const getAllCommentsAsync1 = async () => {
+//   try {
+//     const response = await fetch(url + commentsURL + "/505");
+//     let data = response.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.log("Bir Hata Oluştu", error);
+//   }
+// };
+
+// getAllCommentsAsync1();
+
+// const getCommentByIdThen = fetch(url + commentsURL + "/4")
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then((data) => {
+//     console.log("datamız:", data);
+//   })
+//   .catch((error) => {
+//     console.log("hata alındı", error);
+//   });
+
+const getCommentByIdAsync = async () => {
+  try {
+    const response = await fetch(url + commentsURL + "/4");
+    const data = response.json();
+    console.log(data);
+  } catch (error) {
+    console.log("HATA ALINDI", error);
+  }
+};
+getCommentByIdAsync();
