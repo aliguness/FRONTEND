@@ -99,13 +99,36 @@ getAllCommentsAsync();
 //     console.log("hata alındı", error);
 //   });
 
-const getCommentByIdAsync = async () => {
-  try {
-    const response = await fetch(url + commentsURL + "/4");
-    const data = response.json();
-    console.log(data);
-  } catch (error) {
-    console.log("HATA ALINDI", error);
-  }
+// const getCommentByIdAsync = async () => {
+//   try {
+//     const response = await fetch(url + commentsURL + "/4");
+//     const data = response.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.log("HATA ALINDI", error);
+//   }
+// };
+// getCommentByIdAsync();
+
+// put method'u
+const newComment = {
+  postId: "1",
+  name: "aliosso",
+  email: "alig@gmail.com",
+  location: "kars",
 };
-getCommentByIdAsync();
+
+const putCommentsThen = fetch(url + commentsURL + "/4", {
+  method: "PUT",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(newComment),
+})
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log("put komutunu kullandik", data);
+  })
+  .catch((error) => {
+    console.log("hata aldık:", error);
+  });

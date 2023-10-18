@@ -117,7 +117,7 @@ const postData2 = { name: "Engin", age: "33" };
 const patchRequest = (enpoint, callbackFunction, data) => {
   const request = new XMLHttpRequest();
   request.open("PATCH", enpoint);
-  request.setRequestHeader("Content-Type", "Application/json");
+  request.setRequestHeader("Content-Type", "application/json");
 
   request.onreadystatechange = () => {
     if (request.readyState === XMLHttpRequest.DONE && request.status === 200) {
